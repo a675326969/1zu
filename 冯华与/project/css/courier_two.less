@@ -1,0 +1,114 @@
+@import url(m_resert.css);
+
+html{
+    font-size:62.5%;
+}
+.full(@w,@h,@bg){
+    width: @w;
+    height: @h;
+    background: @bg;
+}
+.box(@ver:vertical){
+    display: -webkit-box;
+    -webkit-box-orient: @ver;
+}
+body,html,.courier_two{
+    .full(100%,100%,null);
+}
+
+.courier_two{
+    .box;
+    header{
+        .full(100%,5rem,black);
+        .box(horizontal);
+        color: white;
+        
+        .close{
+            .full(6rem,100%,none);
+            text-align: center;
+            line-height: 5rem;
+        }
+        .register{
+            -webkit-box-flex: 1;
+            padding-left: 4rem;
+            line-height: 5rem;
+        }
+    }
+    section{
+        -webkit-box-flex: 1;
+        .box;
+        .register_one{
+            .full(90%,12rem,none);
+            margin-left: 5%;
+            border: 0.1rem solid #9a9a9a;
+            margin-top: 1rem;
+            .box;
+            .register_one_one{
+                -webkit-box-flex: 1;
+                border-bottom:0.1rem solid #9A9A9A ;
+                .box(horizontal);
+                .img{
+                    .full(5rem,80%,none);
+                    text-align: center;
+                    margin-top: 5%;
+                    border-right: 0.1rem solid #9A9A9A;
+                    img{
+                        .full(2rem,auto,none);
+                    }
+                }
+                .input{
+                    -webkit-box-flex: 1;
+                    .box(horizontal);
+                    input{
+                        border: none;
+                        .full(auto,4rem,none);
+                        margin-left: 1rem;
+                        margin-top:1rem ;
+                        color: #9a9a9a;
+                    }
+                    .button{
+                        -webkit-box-flex: 1;
+                        .full(5rem,3rem,#46c68b);
+                        margin-top: 1.5rem;
+                        border-radius:2rem;
+                        color: white;
+                        text-align: center;
+                        line-height: 3rem;
+                    }
+                    
+                }
+            }
+            .two{
+                border-bottom: none;
+            }
+        }
+        .checkbox{
+            .full(90%,1.5rem,none);
+            margin-left: 5%;
+            margin-top:1rem ;
+            margin-bottom: 2rem;
+            font{
+                color: #46C68B;
+            }
+        }
+        .register{
+            .full(90%,5rem,#46C68B);
+            margin-left:5% ;
+            color: white;
+            font-size: 1.5rem;
+            text-align: center;
+            line-height: 5rem;
+            border-radius: 0.5rem;
+        }
+        .login{
+            .full(100%,2rem,none);
+            margin-top: 1rem;
+            font-size:1.7rem;
+            text-align: center;
+            a{
+                color: #46C68B;
+            }
+            
+        }
+    }
+}
