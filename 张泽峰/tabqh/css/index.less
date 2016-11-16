@@ -1,0 +1,142 @@
+@import url(m_resert.css);
+.full(@w,@h,@bg){
+    width: @w;
+    height: @h;
+    background: @bg;
+}
+.bo(@ver:vertical){
+    display: -webkit-box;
+    -webkit-box-orient: @ver;
+}
+//球
+.box{
+    width: 500px;
+    height: 200px;
+    background: #7C7A7E;
+    .ball{
+        width: 30px;
+        height: 30px;
+        border-radius: 15px;
+        background: yellow;
+        animation: myfirst 3s infinite alternate;
+        position: absolute;
+    }
+}
+@keyframes myfirst{
+    0%{
+        left: 0;
+        top: 0;
+    }
+    100%{
+        left: 470px;
+        top: 0;
+    }
+}
+//倒福
+.fu{
+    width: 100px;
+    height: 100px;
+    background: red;
+    margin-left: 30%;
+    margin-top: 10%;
+    position: absolute;
+    text-align: center;
+    transform: rotate(45deg);
+    h1{
+        margin-top: 20px;
+        font-size: 4rem;
+        transform: rotate(135deg);
+    }
+}
+//图片
+.pic1{
+    position: relative;
+    width: 300px;
+    height: 300px;
+    margin-left: 10%;
+    margin-top: 10%;
+    img{
+        position: absolute;
+        width: 200px;
+        height: 200px;
+        display: block;
+        border: 1px solid black;
+    }
+    .img3{
+        transform: translate(-20px,20px);
+    }
+    .img2{
+        transform: translate(-10px,10px);
+    }
+}
+.pic2{
+    position: relative;
+    width: 500px;
+    height: 500px;
+    margin-left: 40%;
+    margin-top: -20%;
+    img{
+        position: absolute;
+        width: 200px;
+        height: 150px;
+        display: block;
+        border: 1px solid black;
+    }
+    .img1{
+        transform: rotate(15deg);
+    }
+    .img2{
+        transform: rotate(165deg);
+    }
+}
+.pic3{
+    position: relative;
+    width: 500px;
+    height: 500px;
+    margin-left: 70%;
+    margin-top: -32%;
+    img{
+        position: absolute;
+        width: 200px;
+        height: 150px;
+        display: block;
+        border: 1px solid black;
+    }
+    .img1{
+        margin-left: -65px;
+        margin-top: 5px;
+        transform: scale(0.7,0.8) rotate(-15deg);
+    }
+    .img2{
+        margin-left: 65px;
+        margin-top: 5px;
+        transform: scale(0.7,0.8) rotate(195deg);
+    }
+}
+.warp{
+    overflow: hidden;
+    header{
+       .full(100%,4rem,yellow);
+       ul{
+           .bo(horizontal);
+           li{
+               -webkit-box-flex: 1;
+               text-align: center;
+               line-height: 4rem;
+           }
+           .on{
+                   .full(auto,auto,green);
+               }
+       }
+    }
+    .main{
+        .bo(horizontal);
+        &>div{
+            .full(100%,100%,pink);
+            text-align: center;
+            font-size: 4rem;
+            font-weight: bold;
+            line-height: 10rem;
+        }
+    }
+}
