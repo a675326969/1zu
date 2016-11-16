@@ -1,0 +1,187 @@
+@import url(m_resert.css);
+html {
+  font-size: 62.5%;
+}
+html,
+body,
+.wapper {
+  width: 100%;
+  height: 100%;
+  background: none;
+}
+.wapper {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+}
+header {
+  width: 100%;
+  height: 3rem;
+  background: #000000;
+  display: -webkit-box;
+  -webkit-box-orient: horizontal;
+  color: white;
+}
+header .header_left {
+  padding-left: 1rem ;
+  line-height: 3rem;
+}
+header .header_center {
+  -webkit-box-flex: 1;
+  text-align: center;
+  line-height: 3rem;
+}
+header .header_right {
+  padding-right: 1rem ;
+  padding-top: 0.5rem;
+}
+header .header_right img {
+  width: 2rem;
+  height: auto;
+  background: none;
+}
+section {
+  overflow-y: auto;
+  -webkit-box-flex: 1;
+}
+section::-webkit-scrollbar {
+  width: 0;
+}
+section .main {
+  width: 100%;
+  height: 100%;
+  background: none;
+  display: -webkit-box;
+  -webkit-box-orient: horizontal;
+  overflow: hidden;
+}
+section .main > div {
+  width: 100%;
+  height: 100%;
+  background: #f8f8f8;
+}
+section .one {
+  width: 100%;
+  height: 3rem;
+  background: #ffffff;
+  display: -webkit-box;
+  -webkit-box-orient: horizontal;
+}
+section .one .one_left img {
+  width: 7rem;
+  height: 100%;
+  background: none;
+  display: block;
+}
+section .one .one_center {
+  -webkit-box-flex: 1;
+}
+section .one .one_right {
+  padding-right: 1rem;
+  padding-top: 0.5rem ;
+}
+section .one .one_right img {
+  width: 1.3rem;
+  height: auto;
+  background: none;
+}
+section .swiper-slide {
+  width: 100%;
+  height: auto;
+  background: none;
+}
+section .swiper-slide .img {
+  display: block;
+}
+section .three {
+  width: 100%;
+  height: 5rem;
+  background: #ffffff;
+  display: -webkit-box;
+  -webkit-box-orient: horizontal;
+}
+section .three dl {
+  -webkit-box-flex: 1;
+  text-align: center;
+  padding-top: 0.5rem ;
+}
+section .three dl img {
+  width: 2rem;
+  height: auto;
+  background: none;
+}
+section .four {
+  width: 100%;
+  height: 3rem;
+  background: #ffffff;
+  margin-top: 1rem ;
+}
+section .four img {
+  width: 0.2rem;
+  height: auto;
+  background: none;
+  margin-left: 1rem;
+  margin-top: 0.5rem ;
+}
+section .five {
+  width: 100%;
+  height: 6rem;
+  background: #ff0000;
+  border-top: 0.1rem solid #CCCCCC ;
+  display: -webkit-box;
+  -webkit-box-orient: horizontal;
+}
+section .five .five_left {
+  width: 50%;
+  height: 100%;
+  background: #ffffff;
+  display: -webkit-box;
+  -webkit-box-orient: horizontal;
+}
+section .five .five_left .five_left_img {
+  margin: 0 1rem ;
+  margin-top: 1rem ;
+}
+section .five .five_left .five_left_img img {
+  width: 3rem;
+  height: auto;
+  background: none;
+}
+section .five .five_left .five_left_text {
+  margin-top: 1rem ;
+}
+section .six {
+  width: 100%;
+  height: 9rem;
+  background: #ffffff;
+  border-top: 0.1rem solid #CCCCCC ;
+  display: -webkit-box;
+  -webkit-box-orient: horizontal;
+}
+section .six dl {
+  -webkit-box-flex: 1;
+  text-align: center;
+}
+section .six dl .price {
+  color: #f3a164;
+}
+section .six dl .yd {
+  color: #e1e1e1;
+}
+footer {
+  width: 100%;
+  height: 4rem;
+  background: #ffffff;
+  border-top: 0.2rem solid #C2C2C2;
+}
+footer #dl_list {
+  display: -webkit-box;
+  -webkit-box-orient: horizontal;
+}
+footer #dl_list dl {
+  -webkit-box-flex: 1;
+  text-align: center;
+  padding-top: 0.5rem ;
+}
+footer #dl_list .on {
+  color: orange;
+}
